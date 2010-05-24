@@ -19,7 +19,7 @@ Group:		Development/Languages/Perl
 Source0:	https://launchpad.net/~chris-debenham/+archive/lyricue/+files/libgtk2-clutter-perl_%{ver}-%{rel}.tar.gz
 # Source0-md5:	2bb21ff6a05c7c09b78510bc8769b152
 URL:		http://www.clutter-project.org
-BuildRequires:	clutter-gst-devel
+BuildRequires:	clutter-gtk-devel
 BuildRequires:	perl-Cairo >= 1.000
 BuildRequires:	perl-Clutter >= 1.000
 BuildRequires:	perl-ExtUtils-Depends >= 0.300
