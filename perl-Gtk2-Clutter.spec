@@ -20,14 +20,18 @@ Source0:	https://launchpad.net/~chris-debenham/+archive/lyricue/+files/libgtk2-c
 # Source0-md5:	2bb21ff6a05c7c09b78510bc8769b152
 URL:		http://www.clutter-project.org
 BuildRequires:	clutter-gtk-devel
-BuildRequires:	perl-Cairo >= 1.000
 BuildRequires:	perl-Clutter >= 1.000
+BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
+%if %{with tests}
+BuildRequires:	perl-Cairo >= 1.000
 BuildRequires:	perl-ExtUtils-Depends >= 0.300
 BuildRequires:	perl-ExtUtils-PkgConfig
 BuildRequires:	perl-Gtk2 >= 1.220
 BuildRequires:	perl-Pango >= 1.140
-BuildRequires:	perl-devel >= 1:5.8.0
-BuildRequires:	rpm-perlprov >= 4.1-13
+%endif
+Requires:	clutter-gtk
+Requires:	perl-Clutter >= 1.000
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
