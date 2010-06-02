@@ -1,7 +1,6 @@
 #
 # TODO:
 # - Update source and url when approved on CPAN
-#
 
 %bcond_without	tests		# do not perform "make test"
 %include	/usr/lib/rpm/macros.perl
@@ -16,7 +15,7 @@ Version:	%{ver}.%{rel}
 Release:	1
 License:	perl, lgpl
 Group:		Development/Languages/Perl
-Source0:	https://launchpad.net/~chris-debenham/+archive/lyricue/+files/libgtk2-clutter-perl_%{ver}-%{rel}.tar.gz
+Source0:	http://www.lyricue.org/archive/libgtk2-clutter-perl_%{ver}-%{rel}.tar.gz
 # Source0-md5:	2bb21ff6a05c7c09b78510bc8769b152
 URL:		http://www.clutter-project.org
 BuildRequires:	clutter-gtk-devel
