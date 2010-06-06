@@ -8,7 +8,7 @@
 %define	pdir	Gtk2
 %define pnam	Clutter
 %define ver	0.100
-%define rel	5
+%define rel	6
 Summary:	Integration between Gtk2 and Clutter
 Name:		perl-Gtk2-Clutter
 Version:	%{ver}.%{rel}
