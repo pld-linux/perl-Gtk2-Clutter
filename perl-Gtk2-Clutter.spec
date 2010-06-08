@@ -5,15 +5,15 @@
 %bcond_without	tests		# do not perform "make test"
 %include	/usr/lib/rpm/macros.perl
 
-%define	pdir	Gtk2
-%define pnam	Clutter
-%define ver	0.100
-%define subver	5
+%define		pdir	Gtk2
+%define		pnam	Clutter
+%define		ver		0.100
+%define		subver	5
 Summary:	Integration between Gtk2 and Clutter
 Name:		perl-Gtk2-Clutter
 Version:	%{ver}.%{subver}
 Release:	2
-License:	perl, lgpl
+License:	Perl, LGPL
 Group:		Development/Languages/Perl
 Source0:	http://www.lyricue.org/archive/libgtk2-clutter-perl_%{ver}-%{subver}.tar.gz
 # Source0-md5:	2bb21ff6a05c7c09b78510bc8769b152
@@ -64,7 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %{perl_vendorarch}/%{pdir}/%{pnam}.pm
-%dir %{perl_vendorarch}/%{pdir}/%{pnam}/
+%dir %{perl_vendorarch}/%{pdir}/%{pnam}
 %{perl_vendorarch}/%{pdir}/%{pnam}/*.pod
 %{perl_vendorarch}/%{pdir}/%{pnam}/Install
 %dir %{perl_vendorarch}/auto/%{pdir}/%{pnam}
