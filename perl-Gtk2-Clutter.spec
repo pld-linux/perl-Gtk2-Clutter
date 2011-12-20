@@ -12,7 +12,7 @@
 Summary:	Integration between Gtk2 and Clutter
 Name:		perl-Gtk2-Clutter
 Version:	%{ver}.%{subver}
-Release:	3
+Release:	4
 License:	Perl, LGPL
 Group:		Development/Languages/Perl
 Source0:	http://www.lyricue.org/archive/libgtk2-clutter-perl_%{ver}-%{subver}.tar.gz
